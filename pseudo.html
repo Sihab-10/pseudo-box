@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      /* psudo class  */
       h1:hover {
         color: rgb(33, 85, 105);
         background-color: seagreen;
@@ -18,6 +19,27 @@
       a:visited {
         color: red;
       }
+      li:first-child {
+        color: chocolate;
+      }
+      li:last-child {
+        color: cornflowerblue;
+      }
+      li:nth-child(2n) {
+        color: crimson;
+      }
+      li:nth-child(2n + 1) {
+        background-color: gray;
+      }
+      /* pseudo element */
+      h3::before {
+        content: "Hello ";
+      }
+      .special::after {
+        content: " gello";
+        background-color: darkkhaki;
+        font-size: 39px;
+      }
     </style>
   </head>
   <body>
@@ -29,5 +51,23 @@
     <a href="https://google.com">Google e Jao</a>
     <a href=""></a>
     <a href="https://youtube.com">Youtube e jao</a>
+    <br />
+    <h3>middle size haeder -1</h3>
+    <h3 class="special">middle size haeder -2</h3>
+    <h3>middle size haeder -3</h3>
+    <h3 class="special">middle size haeder -4</h3>
+    <h3 class="special">middle size haeder -5</h3>
+    <h3>middle size haeder -6</h3>
+    <ul>
+      <li>Alia</li>
+      <li>Dalia</li>
+      <li>Kalia</li>
+      <li>Calia</li>
+      <li>Jalia</li>
+      <li>Charaia</li>
+      <li>maria</li>
+      <li>faria</li>
+      <li>jaria</li>
+    </ul>
   </body>
 </html>
